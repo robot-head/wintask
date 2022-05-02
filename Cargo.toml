@@ -1,0 +1,14 @@
+[package]
+name = "wintask"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+sysinfo = "0.23.11"
+nwg = { version = "1.0.12", package = "native-windows-gui", features = [
+  "high-dpi",
+  "tree-view",
+] }
+nwd = { version = "1.0.3", package = "native-windows-derive" }
+automod = "1.0.3"
+snafu = "0.7.0"
